@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_iap"
+            android:layout_width="match_parent"
+            android:textColor="@color/red"
+            android:textSize="@dimen/d_input_text_size"
+            android:layout_marginTop="10dp"
+            android:text="@string/txt_information_about_property"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_property_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_property_title"
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/d_popup_text_size"
+            android:textStyle="bold"
+            android:textColor="@color/blue" />
+
+        <org.rehab.app.ui.views.CustomEditText
+            android:id="@+id/rd_property_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_fs_cell_height"
+            android:layout_marginTop="8dp"
+            android:hint="@string/txt_property_title"
+            android:textSize="@dimen/d_popup_text_size"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" android:background="@color/c_seperator" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_location"
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/d_popup_text_size"
+            android:textStyle="bold"
+            android:textColor="@color/blue"/>
+
+        <org.rehab.app.ui.views.CustomEditText
+            android:id="@+id/ed_location"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_fs_cell_height"
+            android:layout_marginTop="8dp"
+            android:hint="@string/hint_enter_location"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/d_popup_text_size"
+            android:textColor="@color/black" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" android:background="@color/c_seperator" />
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_area"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/d_popup_text_size"
+            android:textColor="@color/blue"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="@dimen/d_fs_cell_height">
+            <org.rehab.app.ui.views.CustomEditText
+                android:id="@+id/ed_area"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:layout_marginTop="8dp"
+                android:hint="@string/hint_enter_area"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textStyle="italic"
+                android:text="sq ft"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" android:background="@color/c_seperator" />
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="@dimen/d_nd_button"
+            android:layout_height="@dimen/d_btn_height"
+            android:text="@string/txt_continue"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/btn_green_round"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/d_popup_text_size"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>

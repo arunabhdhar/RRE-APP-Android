@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/d_fi_plr"
+        android:paddingRight="@dimen/d_fi_plr"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_f_info_height">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="After-Repair Value (ARV) for FLIP"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/d_margin_top"
+                android:layout_toLeftOf="@+id/tv_q_after_repair_value"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_q_after_repair_value"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_f_info_height">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Months to Complete Sale (After Rediant)"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:layout_toLeftOf="@+id/tv_que_months_to_complete"
+                android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/d_margin_top"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_que_months_to_complete"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_f_info_height">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Total Capital Needed"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_total_capital_needed"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:id="@+id/ll_finance_options"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_f_info_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Max $ that can be financed"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_marginRight="@dimen/d_margin_top"
+                    android:gravity="center_vertical|left"
+                    android:layout_toLeftOf="@+id/tv_max_per_financed"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_max_per_financed"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/blue"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_f_info_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Actual to be financed (not inc. closing/holding)"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:layout_toLeftOf="@+id/tv_actual_to_be_financed"
+                    android:textColor="@color/blue"
+                    android:layout_marginRight="@dimen/d_margin_top"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_actual_to_be_financed"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/blue"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_f_info_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Closing/Holding Costs/Interest Added to Loan"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_marginRight="@dimen/d_margin_top"
+                    android:layout_toLeftOf="@+id/tv_chciatl"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_chciatl"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/blue"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_f_info_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Total Loan Amount"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_marginRight="@dimen/d_margin_top"
+                    android:layout_toLeftOf="@+id/tv_total_loan_amount"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_total_loan_amount"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/blue"
+                android:layout_height="1dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_f_info_height">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Cash Requires (over life of project)"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:layout_marginRight="@dimen/d_margin_top"
+                android:layout_toLeftOf="@+id/tv_cash_required"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_cash_required"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="1dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_f_info_height">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Total All-in Costs at end of Radial"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:layout_marginRight="@dimen/d_margin_top"
+                android:layout_toLeftOf="@+id/tv_total_allin_costs"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_total_allin_costs"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_f_info_height">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="% of ARV"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:layout_marginRight="@dimen/d_margin_top"
+                android:layout_toLeftOf="@+id/tv_per_of_arv"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_per_of_arv"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="1dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_f_info_height">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Projected Resale Price"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:layout_marginRight="@dimen/d_margin_top"
+                android:layout_toLeftOf="@+id/tv_projected_resale_price"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_projected_resale_price"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_f_info_height">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Projected Cost of Sale (% of Sale Price)"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:layout_marginRight="@dimen/d_margin_top"
+                android:layout_toLeftOf="@+id/tv_project_cost_of_sale"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_project_cost_of_sale"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_f_info_height">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Projected Profit (after any lender split)"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:layout_marginRight="@dimen/d_margin_top"
+                android:layout_toLeftOf="@+id/tv_projected_profit"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_projected_profit"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_f_info_height">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="ROI (Return of CASH invested)"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:layout_marginRight="@dimen/d_margin_top"
+                android:layout_toLeftOf="@+id/tv_roi_on_cash_inv"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_roi_on_cash_inv"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_f_info_height">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="ROI (Annualized)"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:layout_marginRight="@dimen/d_margin_top"
+                android:layout_toLeftOf="@+id/tv_roi_annualized"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_roi_annualized"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+</ScrollView>

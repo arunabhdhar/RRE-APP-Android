@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Property Details"
+        android:textSize="@dimen/d_nd_heading"
+        android:textColor="@color/red" />
+
+
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" android:background="@color/c_seperator" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:padding="15dp"
+            android:layout_height="match_parent">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Project Title"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/blue" />
+
+            <EditText
+                android:id="@+id/ed_property_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:singleLine="true"
+                android:hint="Property Title"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/blue" />
+
+            <EditText
+                android:id="@+id/ed_location"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="Enter Location"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Area"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/blue" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="@dimen/d_fs_cell_height">
+                <EditText
+                    android:id="@+id/ed_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_fs_cell_height"
+                    android:hint="0"
+                    android:inputType="numberDecimal"
+                    android:background="@android:color/transparent"
+                    android:textSize="@dimen/d_popup_text_size"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:layout_height="@dimen/d_fs_cell_height"
+                    android:text="sq ft"/>
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agent Name"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/blue" />
+
+            <EditText
+                android:id="@+id/ed_agent_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="Enter Agent Name"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Bedroom"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/blue" />
+
+            <EditText
+                android:id="@+id/ed_no_of_bedroom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:inputType="number"
+                android:hint="0"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Number of Bathroom"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/blue" />
+
+            <EditText
+                android:id="@+id/ed_no_of_bathroom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:inputType="numberDecimal"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Photo"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/blue" />
+
+            <ImageView
+                android:id="@+id/iv_property_img"
+                android:layout_width="@dimen/d_property_img_width"
+                android:layout_height="@dimen/d_property_img_height"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerInside"
+                android:hint="0"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/image_banner"
+                android:inputType="numberDecimal"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year of Build"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/blue" />
+
+            <EditText
+                android:id="@+id/ed_build_year"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="Enter Year of Build"
+                android:inputType="number"
+                android:maxLength="4"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <Button
+                android:id="@+id/btn_continue"
+                android:layout_width="@dimen/d_nd_button"
+                android:layout_height="@dimen/d_btn_height"
+                android:text="@string/txt_continue"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/btn_green_round"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

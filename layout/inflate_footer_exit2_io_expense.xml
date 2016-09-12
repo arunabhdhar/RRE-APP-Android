@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/c_seperator"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/tv_add_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_add_item_tv_height"
+        android:text="Add Item"
+        android:textColor="@color/white"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/blue"
+        android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/c_seperator"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Total Operating expenses:"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/d_cell_txt_size"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/d_bdit_input_et" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_f_monthly_rent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_add_item_tv_height"
+                android:background="@color/color_light_grey"
+                android:text="Monthly"
+                android:gravity="center" android:textSize="@dimen/d_cell_txt_size"
+                android:textColor="@color/blue"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_add_item_tv_height"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/d_cell_txt_size"
+                android:layout_below="@+id/tv_f_monthly_rent"
+                android:id="@+id/tv_f_montly_rent"
+                android:background="@drawable/tv_disable_bg"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_annual_rent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_add_item_tv_height"
+                android:background="@color/color_light_grey"
+                android:text="Annual"
+                android:textSize="@dimen/d_cell_txt_size"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_add_item_tv_height"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="@dimen/d_cell_txt_size"
+                android:layout_below="@+id/tv_annual_rent"
+                android:id="@+id/tv_f_annual_rent"
+                android:background="@drawable/tv_disable_bg"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_percentage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_add_item_tv_height"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_add_item_tv_height"
+                android:layout_below="@+id/tv_percentage"
+                android:id="@+id/tv_f_percentage"
+                android:gravity="center"
+                android:textSize="@dimen/d_cell_txt_size"
+                android:text="100%"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/tv_disable_bg"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

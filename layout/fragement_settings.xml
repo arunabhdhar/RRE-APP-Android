@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/d_margin_top"
+            android:layout_height="@dimen/d_fs_cell_height">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/d_popup_text_size"
+                android:text="@string/txt_notification"
+                android:gravity="center_vertical"
+                android:textColor="@color/blue"
+                />
+            <ToggleButton
+                android:id="@+id/tb_notification"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:textStyle="italic"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" android:background="@color/c_seperator" />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_fs_cell_height"
+            android:layout_marginTop="@dimen/d_margin_top"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/d_popup_text_size"
+            android:text="@string/txt_change_password"
+            android:background="@android:color/transparent"
+            android:textColor="@color/blue" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" android:background="@color/c_seperator" />
+
+        <TextView
+            android:id="@+id/tv_terms_condition"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_fs_cell_height"
+            android:text="@string/txt_terms_conditions"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/d_margin_top"
+            android:textSize="@dimen/d_popup_text_size"
+            android:textColor="@color/blue"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" android:background="@color/c_seperator" />
+
+        <TextView
+            android:id="@+id/tv_privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_fs_cell_height"
+            android:gravity="center_vertical"
+            android:text="@string/txt_privacy_policy"
+            android:textSize="@dimen/d_popup_text_size"
+            android:layout_marginTop="@dimen/d_margin_top"
+            android:textColor="@color/blue"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" android:background="@color/c_seperator" />
+        <TextView
+            android:id="@+id/tv_faq"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_fs_cell_height"
+            android:gravity="center_vertical"
+            android:text="@string/txt_faq"
+            android:textSize="@dimen/d_popup_text_size"
+            android:layout_marginTop="@dimen/d_margin_top"
+            android:textColor="@color/blue"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" android:background="@color/c_seperator" />
+
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_fs_cell_height"
+            android:gravity="center_vertical"
+            android:text="@string/txt_logout"
+            android:textSize="@dimen/d_popup_text_size"
+            android:layout_marginTop="@dimen/d_margin_top"
+            android:textColor="@color/red"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" android:background="@color/c_seperator" />
+
+
+    </LinearLayout>
+</ScrollView>

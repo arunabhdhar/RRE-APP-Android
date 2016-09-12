@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/ll_add_item"
+    android:layout_height="@dimen/d_add_item_tv_height">
+
+    <TextView
+        android:id="@+id/tv_add_item"
+        android:layout_width="match_parent"
+        android:text="+ Add Item"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="@dimen/d_cell_txt_size"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/d_add_item_tv_height" />
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/blue"
+        android:layout_height="1dp"/>
+</LinearLayout>

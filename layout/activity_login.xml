@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="@dimen/d_logo_height"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/app_logo"
+                    android:background="@null" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <org.rehab.app.ui.views.CustomEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/ed_email"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:inputType="textEmailAddress"
+                    android:gravity="center"
+                    android:textSize="@dimen/d_input_text_size"
+                    android:hint="@string/hint_email_address"
+                    android:layout_height="@dimen/d_input_height" />
+
+                <org.rehab.app.ui.views.CustomEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/ed_password"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:inputType="textPassword"
+                    android:gravity="center"
+                    android:hint="@string/hint_password"
+                    android:textSize="@dimen/d_input_text_size"
+                    android:layout_height="@dimen/d_input_height" />
+
+                <TextView
+                    android:id="@+id/tv_forgo_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingRight="@dimen/d_margin_right"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/d_margin_top"
+                    android:text="@string/txt_fogot_password"
+                    android:textSize="@dimen/d_text_size" />
+
+                <Button
+                    android:id="@+id/btn_signin"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_btn_round_height"
+                    android:text="@string/txt_sign_in"
+                    android:layout_marginLeft="@dimen/d_margin_left"
+                    android:layout_marginTop="@dimen/d_margin_top"
+                    android:layout_marginRight="@dimen/d_margin_right"
+                    android:background="@drawable/btn_red_round"
+                    android:textSize="@dimen/d_text_size"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_margin_top"
+                    android:text="@string/txt_hint_sign_up"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:textSize="@dimen/d_text_size"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/blue"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_above="@+id/rl_bottom"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/d_text_size"
+                android:textColor="@color/blue"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:text="CLOSING COSTS TO PURCHASE PROPERTY"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/c_seperator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/d_cell_txt_size"
+                android:layout_width="match_parent"
+                android:text="*Note: these closing costs do not inclide any points or fees associated with a loan, which are entered in the next section!"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/c_seperator"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_toLeftOf="@+id/rl_spinner"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="10dp"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:text="How do you want to enter your Closing Costs?"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:id="@+id/rl_spinner"
+                    android:layout_width="@dimen/d_cctpp_input_width"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_height="@dimen/d_fs_cell_height">
+                    <Spinner
+                        android:id="@+id/s_your_closing_costs"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/d_fs_cell_height"
+                        android:spinnerMode="dropdown" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_options_heading"
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/d_popup_text_size"
+                android:paddingLeft="10dp"
+                android:text="Enter Total Closing Costs:"
+                android:layout_height="wrap_content" />
+            <View
+                android:background="@color/c_seperator"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="1dp"/>
+            <RelativeLayout
+                android:id="@+id/rl_quick_lump_sum"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_marginTop="10dp"
+                android:layout_height="@dimen/d_btn_height">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Total Closing Costs"
+                    android:textColor="@color/blue"
+                    android:paddingLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/et_quick_lump_sum"
+                    android:layout_width="@dimen/d_cctpp_input_width"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:inputType="numberDecimal"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/spinner_bg"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="@dimen/d_hint_width" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_detail_input"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_items"
+                    android:paddingTop="5dp"
+                    android:visibility="visible"
+                    android:layout_above="@+id/rl_footer"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="match_parent"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/rl_footer"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="@dimen/d_btn_height">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="TOTAL"
+                        android:textSize="@dimen/d_popup_text_size"
+                        android:layout_height="match_parent" />
+                    <TextView android:id="@+id/tv_di_total"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="match_parent"
+                        android:layout_width="@dimen/d_popup_button_wh"
+                        android:gravity="center"
+                        android:textSize="@dimen/d_popup_text_size"
+                        android:background="@drawable/tv_disable_bg"
+                        />
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/ll_qper_of_purchase"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="@dimen/d_btn_height">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="% of Purchase"
+                        android:textColor="@color/blue"
+                        android:paddingLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/d_popup_text_size"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/et_qper_of_purchase"
+                        android:layout_width="@dimen/d_cctpp_input_width"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textSize="@dimen/d_popup_text_size"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/spinner_bg"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="@dimen/d_hint_width" />
+                </RelativeLayout>
+                <View
+                    android:background="@color/c_seperator"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="1dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="@dimen/d_btn_height">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Total"
+                        android:textColor="@color/blue"
+                        android:paddingLeft="10dp"
+                        android:textSize="@dimen/d_popup_text_size"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_totoal_qper_of_purchase"
+                        android:layout_width="@dimen/d_cctpp_input_width"
+                        android:layout_marginLeft="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:textSize="@dimen/d_popup_text_size"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/tv_disable_bg"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="@dimen/d_hint_width" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/rl_bottom"
+            android:layout_marginLeft="@dimen/d_margin_left"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/d_margin_right"
+            android:layout_marginTop="@dimen/d_margin_top"
+            android:layout_height="@dimen/d_btn_height">
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="@dimen/d_popup_button_wh"
+                android:text="@string/as_txt_cancel"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/white"
+                android:background="@color/grey_500"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="@dimen/d_popup_button_wh"
+                android:text="@string/txt_update"
+                android:textColor="@color/white"
+                android:background="@color/blue"
+                android:textSize="@dimen/d_popup_text_size"
+                android:layout_alignParentRight="true"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingTop="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_option1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_no_of_units"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_add_item_tv_height"
+                android:background="@color/color_semi_black"
+                android:text="# of Units"
+                android:gravity="center"
+                android:textSize="@dimen/d_cell_txt_size"
+                android:textColor="@color/blue"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_add_item_tv_height"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="@dimen/d_cell_txt_size"
+                android:inputType="number"
+                android:layout_below="@+id/tv_no_of_units"
+                android:id="@+id/et_no_of_units"
+                android:background="@drawable/tv_edittext_bg"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_unit_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_add_item_tv_height"
+                android:background="@color/color_semi_black"
+                android:text="Unit Type"
+                android:textSize="@dimen/d_cell_txt_size"
+                android:gravity="center"
+                android:textColor="@color/blue"/>
+            <RelativeLayout
+                android:id="@+id/rl_months_complete_sales"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_unit_type"
+                android:background="@drawable/spinner_bg"
+                android:layout_height="@dimen/d_add_item_tv_height">
+                <Spinner
+                    android:id="@+id/s_unit_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:spinnerMode="dropdown" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_sq_feet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_add_item_tv_height"
+                android:gravity="center"
+                android:textSize="@dimen/d_cell_txt_size"
+                android:background="@color/color_semi_black"
+                android:text="Square Ft."
+                android:textColor="@color/blue"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_add_item_tv_height"
+                android:layout_below="@+id/tv_sq_feet"
+                android:id="@+id/et_sq_feet"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/tv_edittext_bg"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_option2"
+        android:layout_below="@+id/ll_option1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_monthly_rent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_add_item_tv_height"
+                android:background="@color/color_semi_black"
+                android:text="Monthly Rent"
+                android:gravity="center"
+                android:textSize="@dimen/d_cell_txt_size"
+                android:textColor="@color/blue"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_add_item_tv_height"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_monthly_rent"
+                android:id="@+id/et_montly_rent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="@dimen/d_cell_txt_size"
+                android:inputType="numberDecimal"
+                android:background="@drawable/tv_edittext_bg"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_annual_rent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_add_item_tv_height"
+                android:background="@color/color_semi_black"
+                android:text="Annual Rent"
+                android:gravity="center"
+                android:textSize="@dimen/d_cell_txt_size"
+                android:textColor="@color/blue"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_add_item_tv_height"
+                android:layout_below="@+id/tv_annual_rent"
+                android:id="@+id/tv_annual_rent_dummy"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/tv_disable_bg"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_add_item_tv_height"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="@dimen/d_cell_txt_size"
+                android:inputType="numberDecimal"
+                android:layout_below="@+id/tv_annual_rent"
+                android:id="@+id/et_annual_rent"
+                android:background="@drawable/tv_disable_bg"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_q_percentage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_add_item_tv_height"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_add_item_tv_height"
+                android:layout_below="@+id/tv_q_percentage"
+                android:id="@+id/tv_percentage"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/d_cell_txt_size"
+                android:gravity="center"
+                android:background="@drawable/tv_disable_bg"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/ll_option2"
+        android:layout_marginBottom="5dp"
+        android:background="@color/blue"
+        />
+</RelativeLayout>

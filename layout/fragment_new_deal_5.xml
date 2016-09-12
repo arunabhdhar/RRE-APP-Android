@@ -1,0 +1,1286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hold &amp; Rent Analysis"
+        android:textSize="@dimen/d_nd_heading"
+        android:textColor="@color/red" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" android:background="@color/c_seperator" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:padding="15dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="After-Repair Value (ARV) for RENT"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_q_after_repair_value"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="ARV or After-Repair-Value is the projected market value of the property after all the renovations are complete."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/ed_after_repair_value"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:singleLine="true"
+                android:inputType="number"
+                android:text="100000"
+                android:hint="0"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Months to Rent(After Rediant Peroid is Over)"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:layout_toLeftOf="@+id/tv_que_months_to_complete"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_months_to_complete"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textStyle="bold"
+                    android:tag="How many months will it take to lease up the property (and refinance if that option is selected) after the rehab is complete."
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_financing_used"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spinner_bg"
+                android:layout_height="@dimen/d_fs_cell_height">
+                <Spinner
+                    android:id="@+id/s_months_to_complete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:spinnerMode="dropdown" />
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Capital Needed"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:layout_toLeftOf="@+id/tv_que_holding_costs"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_total_capital_needed"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:tag="Total capital required to do the project, not including costs associated with financing. Includes: purchase price, non-financing closing costs, holding costs and rehab budget."
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_total_capital_needed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@drawable/tv_disable_bg"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Max $ that can be financed"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:layout_toLeftOf="@+id/tv_que_inc_clos_holding_costs"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_max_that_can_be"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:tag="This number reflects the maximum that your lender will finance based on your inputs: ARV or cost and the lender cap."
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_max_that_can_be"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@drawable/tv_disable_bg"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/d_min_cell_height"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Actual to be financed (not inc. closing/holding)"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:layout_toLeftOf="@+id/tv_que_actual_to_be_financed"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_actual_to_be_financed"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textStyle="bold"
+                    android:tag="This will indicate the actual amount that you will receive from your lender. Back-end points and interest may be added to this."
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_actual_to_be_financed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@drawable/tv_disable_bg"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:minHeight="@dimen/d_min_cell_height"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Closing/Holding Costa/Interest Added to Loan"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:layout_toLeftOf="@+id/tv_que_closing_holding_costs_interest"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_closing_holding_costs_interest"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textStyle="bold"
+                    android:tag="Total amount of points and interest added to the loan amount to be paid off at loan maturity/baloon."
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_closing_holding_costs_interest"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@drawable/tv_disable_bg"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Loan Amount"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textStyle="bold"
+                    android:layout_toLeftOf="@+id/tv_que_total_loan_amount"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_total_loan_amount"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:tag="This will equal 'Actual to be financed (not inc. closing/holdin)' + Closing/Holding Costs/Interest Added to Loan. This will reflect the total loan amount due to be paid off at maturity."
+                    android:padding="5dp"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_total_loan_amount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@drawable/tv_disable_bg"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cash Requires"
+                    android:paddingTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_cah_required"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="Amout of total cash you will need over the life of the project, in addition to financing. This # will impact your ROI."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_cash_required"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@drawable/tv_disable_bg"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total All-in Costs at end of Radial"
+                    android:paddingTop="5dp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_total_allin_costs"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="This is the total all-in cost basis of the project, including acquisition, closing costs, holding costs, rehab, origination and discount points and interest on the loan."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_total_allin_costs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@drawable/tv_disable_bg"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="% of ARV"
+                    android:paddingTop="5dp"
+                    android:layout_toLeftOf="@+id/tv_que_per_of_arv"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_per_of_arv"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:tag="Total cost basis of the project divided by the ARV - this is a good sanity check for the viability of your project!!"
+                    android:padding="5dp"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_per_of_arv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@drawable/tv_disable_bg"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:id="@+id/tv_title_que_projected_profit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/tv_que_projected_operation_income"
+                    android:text="Enter Projected Operating Income"
+                    android:paddingTop="5dp"
+                    android:background="@color/grey_500"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_projected_operation_income"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="Click on the button to be directed to a screen where you can enter projected rents (operating income)."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_projected_operation_income"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:text="1200"
+                android:paddingLeft="10dp"
+                android:background="@drawable/tv_disable_bg"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:id="@+id/tv_title_projected_operation_expenses"
+                    android:layout_toLeftOf="@+id/tv_que_projected_operation_expenses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey_500"
+                    android:text="Enter Projected Operating Expenses"
+                    android:paddingTop="5dp"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_projected_operation_expenses"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:tag="Click on the button to be directed to a screen where you can enter projected operating expenses."
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_projected_operation_expenses"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:text="120"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@drawable/tv_disable_bg"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Net Operating Income (Monthly)"
+                    android:paddingTop="5dp"
+                    android:textStyle="bold"
+                    android:layout_toLeftOf="@+id/tv_que_net_operating_income"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_net_operating_income"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="This will show the Net Operating Income of your property (in year 1)."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_net_operating_income"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/tv_enabled_bg"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_min_cell_height"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_que_refinance_into_permanent"
+                    android:text="Refinance into permanent financing?"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_refinance_into_permanent"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="This will show the Net Operating Income of your property (in year 1)."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_refinance_into_permanent"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spinner_bg"
+                android:layout_height="@dimen/d_fs_cell_height">
+                <Spinner
+                    android:id="@+id/s_refinance_into_permanent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:spinnerMode="dropdown" />
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_min_cell_height"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_que_refi_per_of_app"
+                    android:text="Refi % of Appraisal (ARV)"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_refi_per_of_app"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="This is the max % of the appraisal (after-repair) at which you are able to refinance the property. This will depend on your lender and their particual programs/requirements. ARV = appraisal. **Also, you may put a lower % here in case you wish to only pull out a certain amount of cash. For example: ARV = 100k, but you only need 52k to recoup your investment, enter '52%'."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/ed_refi_per_of_app"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:text="85"
+                android:inputType="numberDecimal"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_min_cell_height"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_que_new_mortgage_rate"
+                    android:text="New Mortgage Rate"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_new_mortgage_rate"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="Mortgage rate of the permanent loan you are refinancing into."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/ed_new_mortgage_rate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:text="7"
+                android:inputType="numberDecimal"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_min_cell_height"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_que_of_amo_year"
+                    android:text="# of Amortization Years / Interest Only?"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_of_amo_year"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="Is the permanent loan into which you are refinancing going to be Interest Only or Amortized? If Amortized, please select the # of years (1-30)."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_of_amo_year"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/spinner_bg"
+                android:layout_height="@dimen/d_fs_cell_height">
+                <Spinner
+                    android:id="@+id/s_of_amo_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:spinnerMode="dropdown" />
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_min_cell_height"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_que_refi_discount_points"
+                    android:text="Refi Discount Points and Misc Costs (%)"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_refi_discount_points"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="Total closing costs when you refi, as a % of the loan balance."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/ed_refi_discount_points"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:text="3"
+                android:inputType="numberDecimal"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_min_cell_height"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_que_new_mtge_pmnt"
+                    android:text="New Mtge Pmnt (monthly)"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_new_mtge_pmnt"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="This will show the new mortgage payment after Refi (not including PMI or escrow)."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_new_mtge_pmnt"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@drawable/tv_disable_bg"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_min_cell_height"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_que_refi_loan_amount"
+                    android:text="Mortgage Amount"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_refi_loan_amount"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="This will show the $ amount of your new loan."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_refi_loan_amount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:background="@drawable/tv_disable_bg"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_min_cell_height"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_que_cash_out_at_refi"
+                    android:text="Cash Out at Refi"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_cash_out_at_refi"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="This will indicate how much cash you are pulling out when refinancing. Compare this to your original cash investment. If this number is more, that means you are pulling out in excess of your original investment."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_cash_out_at_refi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/tv_enabled_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_min_cell_height"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_que_profit_at_refi"
+                    android:text="Profit at Refi (after any lender split)"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_profit_at_refi"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="This is how much cash you are pulling out in excess of your cost basis in the property. This is your profit."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_profit_at_refi"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/tv_enabled_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_min_cell_height"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_que_roi_on_cash_inv"
+                    android:text="ROI on Cash Invested (Annualized)"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_roi_on_cash_inv"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="If #39 is more than 0, and you had to put up some of your cash for the acquisition/rehab, this will equal #52/#39 (and then annualized)- and represents your ROI on your initial cash investment."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_roi_on_cash_inv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/tv_enabled_bg"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_min_cell_height"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_que_original_money_tied_up"
+                    android:text="Original money tied up after refi"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_original_money_tied_up"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="If after refinancing, you have any of your original invested cash still tied up, it will show up here."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_original_money_tied_up"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/tv_enabled_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_min_cell_height"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_que_equity_left_in_deal"
+                    android:text="Equity Left in the Deal after refi"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_equity_left_in_deal"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="If after refinancing, you have any of your original invested cash still tied up, it will show up here."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_equity_left_in_deal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/tv_enabled_bg"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_min_cell_height"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_que_cash_flow"
+                    android:text="Cash Flow (Monthly, Pre-Tax)"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_cash_flow"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="Monthly cashflow after all expenses including mortgage payment, taxes, insurance, and maintenance"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_cash_flow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/tv_enabled_bg"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_min_cell_height"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_que_cash_on_cash"
+                    android:text="Cash-on-Cash (Annual, Pre-Tax)?"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_cash_on_cash"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="If you still have any of your original cash investment tied up in the property, this is your Cash-on-Cash Return (#56/#54, annualized). Otherwise, your return is infinite since you have none of your money invested."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_cash_on_cash"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/tv_enabled_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+            <TextView
+                android:layout_width="match_parent"
+                android:minHeight="@dimen/d_min_cell_height"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Additional Ratios applicable for Refi Scenario"
+                android:paddingTop="5dp"
+                android:layout_marginTop="15dp"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue" />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_min_cell_height"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_que_property_dcr"
+                    android:text="Property DCR"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_property_dcr"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="This is a great sanity check to make sure your refi scenario is viable! This will be the new DCR (debt coverage ratio) of the new proposed loan. If DCR is lower than ~1.25, it prob won't work."
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_property_dcr"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_min_cell_height"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_que_payback_period"
+                    android:text="Payback Period"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_payback_period"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="If #55 is more than zero and you still have some of your original cash investment tied up in the deal, this will tell you the payback period (in years) to recoup that money (pre-tax dollars)"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_payback_period"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_min_cell_height"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_que_cap_rate_property"
+                    android:text="Cap Rate of Property based on Cost Basis"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_cap_rate_property"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="This number will give you your Capitalization Rate based on the total cost of the project. For an all-cash deal, this will correspond to your 1st-year cash-on-cash return"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_cap_rate_property"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="@dimen/d_min_cell_height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_min_cell_height"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/tv_que_cap_rate_of_property_based_on_cost"
+                    android:text="Cap Rate of Property based on ARV"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue" />
+                <TextView
+                    android:id="@+id/tv_que_cap_rate_of_property_based_on_cost"
+                    android:layout_width="@dimen/d_hint_width"
+                    android:text="\?"
+                    android:padding="5dp"
+                    android:tag="This is another good sanity check. This number will give you the the Cap Rate of your property based on the income/expenses and ARV. Good sanity check for your income vs. ARV"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tv_cap_rate_of_property_based_on_cost"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_fs_cell_height"
+                android:hint="0"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/d_popup_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="@dimen/d_nd_button"
+                android:layout_height="@dimen/d_btn_height"
+                android:text="@string/as_txt_save"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/btn_green_round"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

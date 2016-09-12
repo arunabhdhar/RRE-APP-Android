@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d_btn_height"
+                android:text="Name"
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:textSize="@dimen/d_input_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/blue" />
+
+            <org.rehab.app.ui.views.CustomEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_btn_height"
+                android:singleLine="true"
+                android:hint="Enter your name"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/d_input_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Email Address"
+                android:layout_height="@dimen/d_btn_height"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/d_input_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/blue" />
+
+            <org.rehab.app.ui.views.CustomEditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:hint="Enter Email Id"
+                android:singleLine="true"
+                android:layout_height="@dimen/d_btn_height"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/d_input_text_size"
+                />
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/d_btn_height"
+                android:text="Message"
+                android:gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:textSize="@dimen/d_input_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/blue" />
+
+
+            <org.rehab.app.ui.views.CustomEditText
+                android:id="@+id/et_message"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_btn_height"
+                android:layout_marginTop="5dp"
+                android:hint="Enter your message"
+                android:maxLines="4"
+                android:background="@android:color/transparent"
+                android:textSize="@dimen/d_input_text_size"/>
+
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="@dimen/d_cu_btn_width"
+                android:layout_height="@dimen/d_btn_height"
+                android:text="@string/txt_send"
+                android:layout_marginTop="30sp"
+                android:background="@drawable/btn_green_round"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/d_input_text_size"
+                android:textColor="@color/white" />
+            <TextView
+                android:layout_width="match_parent"
+                android:text="@string/txt_email_us"
+                android:layout_marginTop="30dp"
+                android:textSize="@dimen/d_input_text_size"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/d_input_text_size"
+                android:text="@string/txt_our_office"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="@dimen/d_input_text_size"
+                android:text="@string/txt_office_address"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

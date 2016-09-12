@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/tv_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Rental Ratio of Return"
+            android:textSize="@dimen/d_input_text_size"
+            android:textColor="@color/red" />
+
+        <TextView
+
+            android:id="@+id/tv_maximum_offers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Capitalization Rate: "
+            android:textSize="@dimen/d_quic_cal_max_offer"
+            android:textStyle="bold"
+            android:gravity="center_vertical|right"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_cost"
+            android:layout_toLeftOf="@+id/tv_maximum_offers_val"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/tv_maximum_offers_val"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/d_quic_cal_max_offer"
+            android:textStyle="bold"
+            android:textColor="@color/blue" />
+
+    </RelativeLayout>
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" android:background="@color/c_seperator" />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:padding="15dp"
+            android:layout_height="match_parent">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buyer Cost Basis"
+                android:layout_marginTop="15dp"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/blue" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="@dimen/d_fs_cell_height">
+                <org.rehab.app.ui.views.CustomEditText
+                    android:id="@+id/ed_buyer_cost_basis"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_fs_cell_height"
+                    android:editable="false"
+                    android:hint="Buyer Cost Basis"
+                    android:background="@android:color/transparent"
+                    android:textSize="@dimen/d_popup_text_size"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:layout_height="@dimen/d_fs_cell_height"
+                    android:text="$"/>
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Project Income(Monthly)"
+                android:layout_marginTop="15dp"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/blue" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="@dimen/d_fs_cell_height">
+                <org.rehab.app.ui.views.CustomEditText
+                    android:id="@+id/ed_project_income_monthly"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_fs_cell_height"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"
+                    android:textSize="@dimen/d_popup_text_size"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:layout_height="@dimen/d_fs_cell_height"
+                    android:text="%"/>
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Project Expenses(Monthly)"
+                android:layout_marginTop="15dp"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textStyle="bold"
+                android:textColor="@color/blue" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="@dimen/d_fs_cell_height">
+                <org.rehab.app.ui.views.CustomEditText
+                    android:id="@+id/ed_project_expenses_monthly"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/d_fs_cell_height"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"
+                    android:textSize="@dimen/d_popup_text_size"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/d_popup_text_size"
+                    android:layout_height="@dimen/d_fs_cell_height"
+                    android:text="%"/>
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:background="@color/c_seperator" />
+            <Button
+                android:id="@+id/btn_save_calculator"
+                android:layout_width="@dimen/d_nd_button"
+                android:layout_height="@dimen/d_btn_height"
+                android:text="@string/txt_save_calculator"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/btn_green_round"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,293 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue"
+    android:fillViewport="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/RL_Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_registration_margin_top"
+            android:background="@color/white"
+            android:paddingBottom="60sp"
+
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_name"
+                android:layout_marginTop="60sp"
+                android:layout_width="match_parent"
+                app:hintTextAppearance="@style/TextLabelHint"
+                android:theme="@style/TextLabel"
+                android:layout_height="wrap_content">
+                <org.rehab.app.ui.views.CustomEditText
+                    android:id="@+id/ed_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/d_btn_height"
+                    android:background="@color/white"
+                    android:padding="10dp"
+                    android:textSize="@dimen/d_cell_txt_size"
+                    android:singleLine="true"
+                    android:hint="User Name"
+                    android:textColorHint="@color/blue"
+                    android:textColor="@color/grey_500"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <View
+                android:id="@+id/v_sep1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/til_name"
+                android:background="@color/blue"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_email"
+                android:layout_marginTop="5sp"
+                android:layout_below="@+id/v_sep1"
+                android:layout_width="match_parent"
+                android:theme="@style/TextLabel"
+                app:hintTextAppearance="@style/TextLabelHint"
+                android:layout_height="wrap_content">
+                <org.rehab.app.ui.views.CustomEditText
+                    android:id="@+id/ed_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/d_btn_height"
+                    android:layout_below="@+id/edName"
+                    android:background="@color/white"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:hint="Email Address"
+                    android:textSize="@dimen/d_cell_txt_size"
+                    android:singleLine="true"
+                    android:textColorHint="@color/blue"
+                    android:textColor="@color/grey_500"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <View
+                android:id="@+id/v_sep2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/til_email"
+                android:background="@color/blue"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_dob"
+                android:layout_marginTop="5sp"
+                android:layout_below="@+id/v_sep2"
+                android:layout_width="match_parent"
+                app:hintTextAppearance="@style/TextLabelHint"
+                android:layout_toLeftOf="@+id/iv_dob"
+                android:theme="@style/TextLabel"
+                android:layout_height="wrap_content">
+                <org.rehab.app.ui.views.CustomEditText
+                    android:id="@+id/ed_dob"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/d_btn_height"
+                    android:layout_below="@+id/edName"
+                    android:background="@color/white"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:hint="Date of Birth"
+                    android:enabled="false"
+                    android:textSize="@dimen/d_cell_txt_size"
+                    android:editable="false"
+                    android:singleLine="true"
+                    android:textColorHint="@color/blue"
+                    android:textColor="@color/grey_500"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <ImageView
+                android:id="@+id/iv_dob"
+                android:layout_width="@dimen/d_reg_dob_wh"
+                android:layout_below="@+id/til_email"
+                android:layout_marginTop="@dimen/d_margin_top_dob"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/date_selector"
+                android:layout_height="@dimen/d_reg_dob_wh" />
+            <View
+                android:id="@+id/v_sep3"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/til_dob"
+                android:background="@color/blue"
+                />
+            <LinearLayout
+                android:id="@+id/rl_gender"
+                android:layout_below="@+id/v_sep3"
+                android:layout_width="match_parent"
+                android:weightSum="3.5"
+                android:layout_height="@dimen/d_btn_height"
+                >
+                <TextView
+                    android:id="@+id/tv_gender"
+                    android:layout_width="@dimen/d_reg_gender_width"
+                    android:text="Gender"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:textSize="@dimen/d_cell_txt_size"
+                    android:textColor="@color/blue"
+                    android:layout_height="match_parent" />
+                <RadioGroup
+                    android:layout_toRightOf="@+id/tv_gender"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent">
+                    <RadioButton
+                        android:id="@+id/rb_male"
+                        android:text="Male"
+                        android:textColor="@color/blue"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:textSize="@dimen/d_cell_txt_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/rb_female"
+                        android:text="Female"
+                        android:textColor="@color/blue"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/d_cell_txt_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <View
+                android:id="@+id/v_sep4"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/rl_gender"
+                android:background="@color/blue"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_password"
+                android:layout_marginTop="5sp"
+                android:layout_below="@+id/v_sep4"
+                android:layout_width="match_parent"
+                android:theme="@style/TextLabel"
+                app:hintTextAppearance="@style/TextLabelHint"
+                android:layout_height="wrap_content">
+                <org.rehab.app.ui.views.CustomEditText
+                    android:id="@+id/ed_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/d_btn_height"
+                    android:layout_below="@+id/edName"
+                    android:background="@color/white"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:hint="Password"
+                    android:textSize="@dimen/d_cell_txt_size"
+                    android:singleLine="true"
+                    android:textColorHint="@color/blue"
+                    android:textColor="@color/grey_500"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <View
+                android:id="@+id/v_sep5"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/til_password"
+                android:background="@color/blue"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_confrim_password"
+                android:layout_marginTop="5sp"
+                android:layout_below="@+id/v_sep5"
+                android:layout_width="match_parent"
+                android:theme="@style/TextLabel"
+                app:hintTextAppearance="@style/TextLabelHint"
+                android:layout_height="wrap_content">
+                <org.rehab.app.ui.views.CustomEditText
+                    android:id="@+id/ed_confirm_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/d_btn_height"
+                    android:layout_below="@+id/edName"
+                    android:background="@color/white"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:hint="Confirm Password"
+                    android:textSize="@dimen/d_cell_txt_size"
+                    android:singleLine="true"
+                    android:textColorHint="@color/blue"
+                    android:textColor="@color/grey_500"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <View
+                android:id="@+id/v_sep6"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/til_confrim_password"
+                android:background="@color/blue"
+                />
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_btn_round_height"
+                android:text="@string/txt_sign_up"
+                android:layout_marginLeft="@dimen/d_margin_left"
+                android:layout_marginTop="@dimen/d_margin_top"
+                android:layout_below="@+id/til_confrim_password"
+                android:layout_marginRight="@dimen/d_margin_right"
+                android:background="@drawable/btn_red_round"
+                android:textSize="@dimen/d_text_size"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_below="@+id/btn_signup"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_sign_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/txt_hint_signin"
+                android:textSize="@dimen/d_cell_txt_size"
+                android:textColor="@color/blue" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_image_pick"
+            android:layout_width="@dimen/d_profic_pic_hw"
+            android:layout_height="@dimen/d_profic_pic_hw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d_reg_top_margin"
+            >
+            <ImageView
+                android:id="@+id/iv_profile_pic"
+                android:layout_width="@dimen/d_profic_pic_hw"
+                android:layout_height="@dimen/d_profic_pic_hw"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/default_user" />
+            <ImageView
+                android:id="@+id/iv_profile_camera"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_image_upload"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</ScrollView>

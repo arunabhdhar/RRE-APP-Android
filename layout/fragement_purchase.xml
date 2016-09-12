@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/d_fi_plr"
+        android:paddingRight="@dimen/d_fi_plr"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_f_info_height">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Acquisition Price"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_acquisition_price"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_f_info_height">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Closing Costs"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_closing_costs"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_f_info_height">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Estimate Holding Costs"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_estimate_holding_costs"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_f_info_height">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Closing/Holding costs"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_closing_holding_costs"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_f_info_height">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Radiant Budget"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_radiant_budget"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="1dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_f_info_height">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Project Duration(Months)"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_project_duration"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/d_popup_text_size"
+                android:textColor="@color/blue"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/blue"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+</ScrollView>

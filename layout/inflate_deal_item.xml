@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/d_margin_top"
+    android:paddingBottom="@dimen/d_margin_top"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:text="Property in Texas"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/d_input_text_size"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:textColor="@color/grey_500"
+        android:text="Loream    "
+        android:textSize="@dimen/d_cell_txt_size"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/iv_image"
+        android:src="@drawable/image_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_property_details_header_height" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/tv_profit"
+            android:textColor="@color/blue"
+            android:text="$5455"
+            android:textSize="@dimen/d_input_text_size"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/tv_rehab_cost"
+            android:textColor="@color/blue"
+            android:text="$5455"
+            android:textSize="@dimen/d_input_text_size"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/tv_purchase"
+            android:textColor="@color/blue"
+            android:text="$5455"
+            android:textSize="@dimen/d_input_text_size"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:text="Profit"
+            android:textSize="@dimen/d_cell_txt_size"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:text="Rehab Cost"
+            android:textSize="@dimen/d_cell_txt_size"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/d_cell_txt_size"
+            android:textColor="@color/blue"
+            android:text="Purchase"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>
