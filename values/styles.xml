@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/blue</item>
+    </style>
+    <!-- Application Theme -->
+    <style name="Theme.AppTheme.NoActionBar" parent="Theme.AppTheme">
+        <!-- The drawer needs to set the status bar color manually -->
+        <!-- The drawer needs to set the status bar color manually -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+    </style>
+
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/blue</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/d_til_size</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="colorControlNormal">@color/blue</item>
+        <item name="colorControlActivated">@color/blue</item>
+        <item name="colorControlHighlight">@color/blue</item>
+        <item name="android:textColorHighlight">@color/blue</item>
+    </style>
+
+    <style name="CropButton">
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/selector_crop_button</item>
+
+
+
+    </style>
+
+    <!-- ActionBar title text -->
+    <style name="MyActionBarTitleText"
+        parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+        <!-- The textColor property is backward compatible with the Support Library -->
+    </style>
+
+
+
+
+    <style name="ToolTipLayoutDefaultStyle">
+        <item name="ttlm_padding">@dimen/ttlm_default_padding</item>
+        <item name="ttlm_strokeColor">@android:color/transparent</item>
+        <item name="ttlm_backgroundColor">?attr/colorAccent</item>
+        <item name="ttlm_textColor">@color/white</item>
+        <item name="ttlm_strokeWeight">@dimen/ttlm_default_stroke_weight</item>
+        <item name="ttlm_cornerRadius">@dimen/ttlm_default_corner_radius</item>
+        <item name="ttlm_arrowRatio">1.4</item>
+        <item name="android:textAppearance">@style/ToolTipTextStyle</item>
+        <item name="ttlm_overlayStyle">@style/ToolTipOverlayDefaultStyle</item>
+        <item name="ttlm_elevation">@dimen/ttlm_default_elevation</item>
+    </style>
+    <style name="ToolTipTextStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/d_tooltip_textsize</item>
+    </style>
+    <style name="ToolTipOverlayDefaultStyle">
+        <item name="android:color">?attr/colorAccent</item>
+        <item name="ttlm_repeatCount">99</item>
+        <item name="ttlm_duration">600</item>
+        <item name="android:alpha">0.5</item>
+        <item name="android:layout_margin">8dp</item>
+
+    </style>
+
+    <style name="TextLabelHint" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/d_til_size</item>
+    </style>
+
+</resources>

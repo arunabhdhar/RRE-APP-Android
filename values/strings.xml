@@ -1,0 +1,303 @@
+<resources>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Radiant</string>
+    <string name="hint_email_address">Email Address</string>
+    <string name="hint_password">Password</string>
+    <string name="txt_fogot_password">Fogot Password?</string>
+    <string name="txt_sign_in">Sign In</string>
+    <string name="txt_hint_sign_up">Don\'t have an account? <b>Sign Up</b></string>
+    <string name="txt_sign_up">Sign Up</string>
+    <string name="msg_plz_wait">Please wait...</string>
+    <string name="val_password">Enter password</string>
+    <string name="val_email_invalid">Enter email is not valid.</string>
+    <string name="val_email_address">Enter Email Id</string>
+    <string name="val_password_min_length">Enter at least 4 characters password.</string>
+    <string name="err_internet_connection_error">Please check your internet connection and try again.</string>
+    <string name="err_server_error">Server Error</string>
+    <string name="error_invalid_login_param">Enter username and password not found</string>
+    <string name="error_email_not_registred">Email id is not registered</string>
+    <string name="error_email_already_taken">Email is not available</string>
+    <string name="error_username_already_taken">Username is not available</string>
+    <string name="txt_submit">Submit</string>
+    <string name="succ_email_send">Password send on your email id.</string>
+    <string name="txt_hint_signin">Already have an Account?<b>Sign In</b></string>
+    <string name="txt_signup_gallery">Gallery</string>
+    <string name="txt_signup_camera">Camera</string>
+    <string name="as_txt_cancel">Cancel</string>
+    <string name="as_txt_save">Save</string>
+    <string name="txt_preparing_card">Prepair Sdcard</string>
+    <string name="txt_no_storage_card">No Sdcard available</string>
+    <string name="txt_not_enough_space">Not enough space available in sdcard</string>
+    <string name="val_invalid_dob">DOB is invalid.</string>
+    <string name="val_name_empty">Enter your name</string>
+    <string name="val_username_empty">Enter username</string>
+    <string name="val_dob_empty">Select DOB</string>
+    <string name="val_relas_empty">Enter relationship</string>
+    <string name="val_confirm_pass_mismatch">Confirm password is not matched.</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="txt_logout">Logout</string>
+    <string name="txt_search">Search</string>
+    <string name="txt_information_about_property">Information About Property</string>
+    <string name="hint_property_in_texas">Property in Texas</string>
+    <string name="txt_location">Location</string>
+    <string name="txt_property_title">Property Title</string>
+    <string name="hint_enter_location">Enter Location</string>
+    <string name="hint_enter_area">Enter Area</string>
+    <string name="txt_area">Area</string>
+    <string name="txt_continue">CONTINUE</string>
+    <string name="txt_save_calculator">SAVE CALCULATOR</string>
+    <string name="txt_quick_calculator">Quick Offer</string>
+    <string name="txt_new_deal">New Deal</string>
+    <string name="txt_notification">Notification</string>
+    <string name="txt_change_password">Change Password</string>
+    <string name="txt_terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="txt_privacy_policy">Privacy Policy</string>
+    <string name="txt_faq">FAQ</string>
+    <string name="txt_send">SEND</string>
+    <string name="txt_email_us">For faster response to any ordering or support questions, Email us:<font color='blue'>info@radintrealestate.co</font></string>
+    <string name="txt_our_office">Our Office</string>
+    <string name="txt_office_address">Radiant Real Estate LLC \n464 Common Street, Suit 133\nBelmont, MA 02478</string>
+
+
+    <string name="hint_q_purchase">This is the purchase price at which you will acquire the property</string>
+    <string name="hint_q_closing_costs">Click on the button to be directed to a screen where you can enter the total closing costs for the purchase.  Note:  All points/fees associated with a  loan are entered separately</string>
+    <string name="hint_q_holding_costs">Click on the button to be directed to a screen where you can enter the total projected holding costs for the duration of radiant.</string>
+    <string name="hint_q_inc_clos_holding_costs"><![CDATA[Select &quot;Yes&quot; if the lender will fund your purchase closing costs and holdings costs for the project.]]></string>
+    <string name="hint_q_radiant_budget"><![CDATA[Click on this button to enter the projected radiant budget required to flip the property.  You have the option of entering &quot;lump sum budget&quot; or &quot;detailed&quot;.]]></string>
+    <string name="hint_q_radiant_period">How long will the actual renovation of the property take place?  (In months).  Include renovation time only, not time to sell.</string>
+    <string name="txt_update">Update</string>
+    <string name="hint_enter_purchase_price">Enter Purchase Value</string>
+    <string name="hint_enter_quick_lump_sum">Enter Quick Lump Sum Value</string>
+    <string name="hint_enter_percentage_value">Enter Percentage Value</string>
+    <string name="val_message">Enter your message</string>
+    <string name="txt_contact_us_success">Your message is recorded.</string>
+    <string name="txt_active">ACTIVE</string>
+    <string name="txt_property_details">Property Details</string>
+
+    <string-array name="left_menu">
+        <item>Quick Calculator</item>
+        <item>New Deal</item>
+        <item>Save Deal</item>
+        <item>Plans</item>
+        <item>Tutorials</item>
+        <item>Contact Us</item>
+        <item>About Us</item>
+        <item>Settings</item>
+        <item>Logout</item>
+    </string-array>
+
+    <string-array name="operating_expense">
+        <item>Management Fee (% of Gross income)</item>
+        <item>Advertising</item>
+        <item>Insurance Hazard</item>
+        <item>Janitorial</item>
+        <item>Landscape Maintenance</item>
+        <item>Legal</item>
+        <item>Miscellaneous</item>
+        <item>Referrals or commissions</item>
+        <item>Repairs and Maintenance</item>
+        <item>Reserves</item>
+        <item>Taxes - Property</item>
+        <item>other</item>
+    </string-array>
+    <string-array name="operating_expenses_utilities">
+        <item>Water/Sewer</item>
+        <item>Electricity</item>
+        <item>Gas</item>
+        <item>Fuel Oil</item>
+        <item>Other Utilities</item>
+    </string-array>
+
+    <string-array name="tutorial_title">
+        <item>Gain Market Knowledge</item>
+        <item>Focus on niche property within your market</item>
+        <item>Learn to raise money from private money lenders</item>
+        <item>Put systems in place</item>
+        <item>Hire talented Team</item>
+        <item>Create additional income streams</item>
+        <item>Reinvest profits from flipping into longer term rental portfolio</item>
+        <item>Remove yourself from the business</item>
+        <item>Wrap Up</item>
+    </string-array>
+
+    <string-array name="tutorial_details">
+        <item>
+            1. Understand price points on the types of properties you will be acquiring. Your intimate market knowledge will be competitive advantage. You will be able to move faster than competition as you will be able to recognize good deals.\n\n
+            2. The first step is to understand the price points of the property types you are focussing on by area. Put a huge map of the area on the wall you are focussing on. If you are focussing on median-priced homes start sectioning off areas based on common price points. This map will give you a good feel for not only your area, but for the sale prices within smaller sections of town.\n\n
+            3. Next, pick up a zoning map for the areas where you plan on buying a property. Many opportunities might exist based on what area the property is located in and what the zoning laws are for that property. For example, if you are considering buying a duplex, and you find that the area is zoned for both residential and commercial properties. Then, you could potentially turn the duplex into an office space and rent it out for a higher amount.\n\n
+            4. Also you need to learn how to appraise properties properly. You will make money if you buy a property at a discount, so you should know exactly how to pull market comparable and must have access to MLS etc.
+        </item>
+        <item>
+            1. Specialize on radiantbing a specific property type like single-family &amp; multi-family homes for example. Do research on all those property types and find out if it is profitable for you.\n\n
+            2. In some areas it is better to radiant larger properties whose radiant costs are more than $30,000. Lot of radiantbers tend to flip properties which are less to on radiant costs and takes lesser time to radiant and sell. But our understanding is that for the bigger radiant properties the margin is more and so is the profitability.
+        </item>
+        <item>
+            1. Try to build relationships with the private money lenders who would give advantage over competitors who had not taken time to develop those relationships.\n\n
+            2. They not only give us confidence to make more offers and do more deals, they also insulated us from a lot of risk, because the access to additional funds shall give more liquidity to your business.\n\n
+            3. Typically, private money lenders will want between 6 to 12 percent interest on their money. In exchange for lending you the money for the deal, you will give them a promissory note and a mortgage or deed of trust on the property. Also, they will be named in the insurance policy in case something happens to the property while you own it.\n\n
+            4. By utilizing private money lenders, you could also borrow at lower interest rates with even more flexible terms than other investors in the area.\n\n
+            5. This will give you a significant advantage because you don’t have to spend a lot of time jumping through the hoops trying to qualify for loans with banks or other non-traditional lenders and risk losing deals in the process.\n\n
+            6. Over the years, as you will build on cash reserves, you will find that private lending to be a great way to keep earning high rates of return from the profits on the deals you have flipped. Instead of your money sit in the bank at dismal interest rates, you will learn how to lend your money for much higher rates of return.
+        </item>
+        <item>
+            1. Deconstruct a few of your past transactions and look for more efficient ways to manage each step.\n\n
+            2. Create a mind map (visual outline) to organize information and implement technology solutions to save time.\n\n
+            3. Create positions to handle different aspects of the business so that you could remove yourself from much of the day to day work.\n\n
+            4. Create detailed standard operating procedures that you could continue to use and tweak till current day.
+        </item>
+        <item>
+            1. Once you have streamlined your business through the use of systems and technology, your appetite for growth will increase.\n\n
+            2. And the only way to grow more is to hire talented team members to replace yourself.\n\n
+            3. To do this, you should have detailed systems and standard operating procedures that your people could follow, even with limited experience.\n\n
+            4. Then it will just a matter of interviewing, hiring and training the most talented people you could find.\n\n
+            5. Apart from this, you have to use your personal time working in the business as strategically as possible. You must also spend ample time educating yourself on running a business, and learning financial management.\n\n
+            6. Finally, you will have to learn how to hire and manage talented people effectively.
+        </item>
+        <item>
+            1. All folks you interact with might not buy or sell properties from / to you. But you can influence them and provide other real estate related products and services through a network of affiliate relationships that you can develop. Affiliate relationships involve at least two people or organizations that promote the same product or service.\n\n
+            2. Commissions or referral fees tend to range from 10 to 50 percent. As you can imagine, affiliate relationships can generate lot of income for you and your business.\n\n
+            3. You can in fact, you can cover your marketing and overhead costs simply by referring people you meet and form relationships with those people selling real estate related product and services.\n\n
+            4. You can earn referral commissions from tons of sellers who weren’t motivated enough to see their property at a discount, but were still very realistic about the price. You can refer those leads to your own real estate brokerage and the agents who work under you.\n\n
+            5. You can also refer buyers to hard money lenders, credit repair companies, home warranty companies etc.
+        </item>
+        <item>
+            1. Make a strategic choice to build your rental portfolio to take advantage of the many long term benefits of owning real estate. Finance the majority of your acquisitions using the profits from the properties you flip.\n\n
+            2. When starting out, goal should be to use the monthly passive cash flow to take care of your living expenses and office overhead. Also, you can benefit significantly from tax advantages, mortgage principal reduction and long term appreciation.\n\n
+            3. Target properties you can buy with equity, that have an 18 percent or greater cash on cash return, and are in strong markets, where you have a great property management team in place.\n\n
+            4. This will increase your cash flow and will make your business more attractive to banks and lenders when you are looking for bank lines of credit and financing for your other property acquisitions. Banks prefer predictability and prefer to lend to investors who not only flip, but who also have created consistent monthly cash flow.
+        </item>
+        <item>
+            1. Strategically, begin yourself removing from different parts of your business. Ultimately, the goal is to build your real estate business so you can eventually remove yourself from it.\n\n
+            2. Your approach should be systematic, and it’s not an overnight process. First, you have to master your craft in each department of your business yourself: sales, marketing, operations, radiant, financing and so on, to gain a deep knowledge and understanding of how the business works.\n\n
+            3. At the same time you have to design the systems to make the time you spend in the business as efficiently as possible.\n\n
+            4. Then, you will create standard operating and training procedures, so you can train someone to replace you in the different divisions of the business.\n\n
+            5. Make a goal that you and your partners meet every quarter to review not only your personal performance, but also the systems you were developing to begin the removal process.\n\n
+            6. Every quarter make it a goal to hire someone to replace one of you, or expand your employee base so he/she can could take over a new area of the business.\n\n
+            7. This is a difficult but very rewarding process. You will learn how to achieve your goals, while at the same time helping other people to achieve theirs.
+        </item>
+        <item>
+            1. Looking back, each of these above lessons will play a vital role in your personal journey to financial freedom.\n\n
+            2. Each lesson is a fundamental shift in the way you invest and ultimately play a role in how you are able to free yourselves from the drudgery of work that plagues most real estate investors.\n\n
+            3. The great thing is you can model how to invest based on the above lessons. There is no need to reinvent the wheel when it comes to starting up and growing a real estate business.
+        </item>
+    </string-array>
+
+    <string-array name="faq_title">
+        <item>What does this software do exactly?</item>
+        <item>Who is this software for?</item>
+        <item>What comes with the FREE Software?</item>\
+        <item>How long can I use the free software for?</item>
+        <item>Are there any strings attached with the free software?</item>
+        <item>What devices does this software work on?</item>
+        <item>I have a Mac or a tablet or a phone. Will this work?</item>
+        <item>What do I get for upgrading to Premium?</item>
+        <item>Do you mail me any discs when I purchase?</item>
+        <item>I signed up for the software but lost my password.</item>
+        <item>Will your software allow me to market my wholesale deals?</item>
+        <item>Will your software help me with raising money for my deals?</item>
+        <item>Can agents use this?</item>
+        <item>What is your refund policy?</item>
+        <item>I have bought the excel-based Premium software. How does the new cloud-based software affect me?</item>
+        <item>Will there be future releases and updates of this program?</item>
+        <item>I love this software. Can I promote it as an affiliate and earn commissions?</item>
+    </string-array>
+    <string-array name="faq_detail">
+        <item>
+            Radiant Real estate:\n\n
+            &#160;&#160;1. Helps you calculate Max Offer you can make on any deal\n\n
+            &#160;&#160;2. Helps you evaluate any property in need of radiant for different exit strategies and profit potential, along with various financing methods and their costs\n\n
+            &#160;&#160;3. Helps you create KILLER Marketing Materials (Flyers and Presentations) for your wholesale deals. You can then either print out these materials, email them to your buyers\' list or post them on social media to get your deals sold quicker and for more $!\n\n
+            &#160;&#160;4. Helps you quickly create PERSUASIVE Deal Funding Pitches and Presentations for your radiant projects. You can quickly email or print/hand these presentations to private money lenders, hard money lenders or even banks and get your deals funded! The presentations create HUGE credibility for you, even if you are brand new to this business and show your potential lenders "what's in it for them" so that they fund your deal quicker!\n\n
+            &#160;&#160;5. Helps you put together detailed Radiant Budgets and Scopes of Work for your real estate projects\n\n
+            &#160;&#160;6. And much much more!
+    </item>
+
+        <item>
+            Radiant Realestate is for:\n\n
+            &#160;&#160;1. Wholesalers (investors who put deals under contract, then flip or "assign" those contracts to other investors. If you\'re brand new, one of the things that you get FREE with our software is training on how to make money wholesaling real estate. And Radiant Real estate will help you calculate offers and then create amazing marketing flyers for your buyers, in order to sell your deals quickly and build your buyers\' list.\n\n
+            &#160;&#160;2. Radiantbers. Whether you radiant and flip houses or radiant and then rent them out for cashflow, this software will help you calculate offers, project profits, analyze exit strategies, create deal-funding pitches to get your deals funded, and manage your radiant projects. And you will get ongoing content about this business from people that do deals on a regular basis!\n\n
+            &#160;&#160;3. Agents. If you deal with investors, it\'s important you understand their language and the way they evaluate deals for potential profit. With our software, you can do that AND generate marketing flyers and presentations to send to your buyers, in order to sell your deals quicker and for more money!\n\n
+            &#160;&#160;4. Experienced and Brand New Investors Alike! We don\'t just provide software. We provide education and content that can take you from a complete newbie to a solid deal maker and from a solid deal maker to an established real estate mogul!\n\n
+    </item>
+        <item>
+            The free software gives you full ability to analyze deals, though the marketing component of the software is locked out. You will also get detailed video tutorials, real life case studies of deals, and very responsive, ongoing support (nobody else provides support like this for FREE software).
+        </item>
+        <item>
+            You can use the free software for as long as you would like. AND we will continue offering you great, responsive support as well as ongoing education!
+        </item>
+        <item>
+            No. The free Radiant Realestate Lite software access is yours no strings attached. We do have an awesome, snazzy Premium version of our software, but you are never under any obligation to upgrade. Whether you do that or not is entirely up to you!
+        </item>
+        <item>
+            This is a cloud-based platform and will work virtually on any device that has an internet connection: PCs, Macs, tablets, phones, etc. Some minimum system requirements apply but if you have a modern device, this software will work great on it!
+        </item>
+        <item>Yes, absolutely! As long as your device is hooked up to some sort of Internet (not necessarily wifi), you\'ll be able to connect to our software on the go, no matter whether you\'re in the office or in the field!</item>
+        <item>Radiant Realestate Premium unlocks all the powerful marketing capabilities of the software, project management capabilities of the software, AND some powerful bonuses.</item>
+        <item>No, our software is completely web-based, which means you only access it online with the username and password we email you.</item>
+        <item>Make sure you\'re using the email address with which you joined!</item>
+        <item>Absolutely! The marketing flyers and presentations that Radiant Realestate Premium creates with a few clicks of a mouse will help you sell your deals faster, and for more money. You can print these presentations out and take them to meetings, email them, or post them to social media! It all ads up to more credibility for you, more deal flow and quicker sales!</item>
+        <item>Yes. Radiant Realestate Premium allows you to create Deal Funding Proposals and Presentations for private money, hard money and even banks. These proposals take minutes to create and can literally mean the difference between you being shown the door and getting the funding you need!</item>
+        <item>Absolutely! Our powerful marketing tools will allow agents to create one of a kind marketing flyers for their deals that speak your buyers\' language. What differentiates these marketing materials from traditional packets you usually see is that they provide the buyers with the numbers they need to see to make a decision. This is very very powerful when it comes to selling investment property deals. Give it a try!</item>
+        <item>Our refund policy is strictly 30 days after your initial purchase. Not 31 or 35 days. That means you have ZERO Risk when you purchase our software as you have 30 days to use it but that also means you must notify us before your 30 days are up if you are not happy for whatever reason.\n\n
+                For Monthly subscribers this means you can request a refund on your initial $29 purchase within 30 days. After 30 days you may cancel your monthly membership and prevent future monthly charges.\n\n
+                For Annual subscribers this means you can request a refund of your initial $197 purchase within 30 days. After 30 days you may cancel your membership to prevent future annual billing.\n\n
+                But keep in mind this: our software has a very small refund rate. Great majority of our clients are extremely happy both with the product and results it delivers, and our exceptional customer service. So don\'t hesitate and become a client if you\'re not one already!</item>
+        <item>You may continue using your excel-based software and continue receiving support from us. IMPORTANT: we will not guarantee software compatibility with Excel 2016 or beyond, so please check with us before upgrading Excel.
+        \n\n Or you can switch over to the brand new web-based version of Radiant Realestate.</item>
+        <item>Absolutely! We plan on continually updating, refining and improving this software! We currently already have multiple releases planned with some amazing new features.\n\n
+            For our existing clients of the cloud-based platform, your rates are locked in and there will not be upgrade charges!</item>
+        <item>Yes, absolutely! You can sign up as an affiliate here. Then start spreading the word about this awesome software by referring people to the free version. When someone upgrades to Radiant Realestate Premium, we will pay you 50% commission on a recurring basis!</item>
+    </string-array>
+
+
+
+    <string-array name="di_soft_cost">
+        <item>Demo</item>
+        <item>Arhitectual fees</item>
+        <item>Master Building Permit</item>
+    </string-array>
+
+    <string-array name="di_trade_permits">
+        <item>Plumbing</item>
+        <item>Electrical</item>
+        <item>HVAC</item>
+    </string-array>
+    <string-array name="di_hard_costs">
+        <item>Wall Framing</item>
+        <item>Floor Framing</item>
+        <item>Ceiling Framing</item>
+    </string-array>
+    <string-array name="di_other">
+        <item>Contigency</item>
+        <item>GC Fee</item>
+        <item>Cleanup</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="nd_holding_costs">
+        <item>Insurance Policy Premium</item>
+        <item>Electrical Bills</item>
+        <item>Gas Bills</item>
+        <item>Oil Bills</item>
+        <item>Water/Sewer Bills</item>
+        <item>Alarm System Bills</item>
+        <item>Lawncare</item>
+        <item>Miscellaneous</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="nd_closing_costs">
+        <item>Attorneys/Closing Fees</item>
+        <item>Title Search</item>
+        <item>Title Insurance</item>
+        <item>Recording Fees</item>
+        <item>Appraisal</item>
+        <item>Inspection</item>
+        <item>Real Estate Taxes Due</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

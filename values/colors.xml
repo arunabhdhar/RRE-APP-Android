@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="black" type="color">#000000</item>
+    <item name="blue" type="color">#144c7b</item>
+    <item name="red" type="color">#ff2d55</item>
+    <item name="white" type="color">#ffffff</item>
+    <item name="main_back" type="color">#292424</item>
+    <color name="edit_text_back">#423b3b</color>
+    <color name="tutorial_back_color">#cc000000</color>
+    <item name="color_semi_black" type="color">#50000000</item>
+    <color name="color_transparent">#00000000</color>
+
+
+    <item name="color_light_grey" type="color">#F5F5FF</item>
+    <color name="grey_50">#F5F5F5</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_500">#757575</color>
+    <color name="blue_500">#77A89D</color>
+    <color name="blue_700">#77A89D</color>
+    <color name="blue_900">#1A237E</color>
+    <color name="orange_500">#FF9800</color>
+    <color name="color_left_menu_bg">#654C67</color>
+
+    <color name="red_light">#f92d2d</color>
+    <item name="red_dark" type="color">#902d2d</item>
+
+    <color name="color_category_cb">#292424</color>
+    <color name="color_category_sel">#1C1919</color>
+    <color name="green">#006400</color>
+    <color name="color_light_green">#009900</color>
+
+    <color name="c_seperator">#EEEEEE</color>
+</resources>
